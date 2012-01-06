@@ -1,0 +1,129 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* Default */
+body { margin:0; padding:0; background:url(../images/bg.gif); color:#330; text-align:center; font:12px/1.5em "宋体","微软雅黑","黑体",Arial,sans-serif; }
+div,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,cite,code,del,dfn,em,img,q,s,samp,small,strike,strong,sub,sup,tt,var,dd,dl,dt,li,ol,ul,fieldset,form,label,legend,button,table,caption,tbody,tfoot,thead,tr,th,td { margin:0; padding:0; font:12px/1.5em "宋体","微软雅黑","黑体",Arial,sans-serif; text-align:left; }
+table { border:none; border-collapse:collapse; }
+ol,ul,dl { list-style:none; }
+h1,h2,h3,h4,h5,h6,th,em,strong { font-weight:normal; font-style:normal; }
+img{ border:none; }
+sub,sup { font-size:75%; line-height:0; position:relative; vertical-align:baseline; }
+sup { top:-0.5em; }
+sub { bottom:-0.25em; }
+.clear { clear:both; line-height:0; font-size:0; visibility:hidden; }
+.indent { text-indent:2em; }
+.center { text-align:center; }
+.right { text-align:right; }
+
+a { color:#330; text-decoration:none; }
+a:hover { color:#f60; text-decoration:underline; }
+
+.more { width:35px; height:5px; background:url(../images/more.gif); overflow:hidden; }
+.more a { width:100%; height:5px; text-indent:-9999px; display:block; }
+
+/* Head */
+#logo { width:1000px; height:244px; margin:0 auto; background:url(../images/Logo.jpg) no-repeat; position:relative; }
+#logo ul { width:120px; overflow:hidden; position:absolute; top:10px; right:10px; }
+#logo li { height:30px; line-height:30px; margin-left:5px; color:#6b7f6b; display:inline; float:left; }
+#logo li a { line-height:30px; color:#6b7f6b; }
+#logo li a:hover { color:#f60; }
+
+#nBg { width:100%; height:35px; background:url(../images/n_bg.jpg) repeat-x; }
+#mainBox { width:1000px; margin:0 auto; padding:5px 0; background:#fff url(../images/bottom_bg.jpg) no-repeat bottom; text-align:center; overflow:hidden; }
+
+/* Nav */
+#nav { width:978px; height:97px; margin:0 auto; background:url(../images/nav_bg.jpg) no-repeat; border:1px solid #babb95; overflow:hidden; }
+#nav a { color:#660; }
+#nav a:hover { color:#f60; }
+#nav a:active { color:#06c; }
+#nav dl { width:170px; margin:23px 0 auto 60px; display:inline; overflow:hidden; float:left; }
+#nav dt { width:50px; height:50px; margin-right:15px; text-indent:-999px; overflow:hidden; float:left; }
+#nav dt#health { background:url(../images/health.jpg) no-repeat center top; }
+#nav dt#disease { background:url(../images/disease.jpg) no-repeat center top; }
+#nav dt#culture { background:url(../images/culture.jpg) no-repeat center top; }
+#nav dt#interactive { background:url(../images/interactive.jpg) no-repeat center top; }
+#nav dd { height:25px; line-height:25px; }
+
+/* Ranking */
+#ranking { width:320px; margin:10px 9px 10px 10px; display:inline; float:left; }
+#rankingTop0 { height:41px; background:url(../images/ranking_top.jpg); position:relative; }
+#rankingTop0 h1 { text-indent:20px; color:#660; font:bold 14px/41px Arial; }
+#rankingTop0 ul { height:25px; overflow:hidden; position:absolute; bottom:0 !important; bottom:-1px; right:10px; }
+#rankingTop0 li { width:63px; line-height:25px; text-indent:0; text-align:center; color:#660; display:block; float:left; cursor:pointer; }
+#rankingTop0 li.current { background:url(../images/ranking_sel.jpg) bottom; color:#330; font-weight:bold; cursor:pointer; }
+#rankingCon0 { background:url(../images/ranking_con.gif) repeat-y; }
+#rankingCon0 ul { height:335px; padding:15px 20px 0 20px; background:url(../images/ranking_bottom.gif) no-repeat bottom; display:none; }
+#rankingCon0 ul.show { display:block; }
+#rankingCon0 li { height:30px; border-bottom:1px dashed #e2e4c9; text-indent:20px; position:relative; }
+#rankingCon0 li a { line-height:30px; color:#660; font-size:14px; }
+#rankingCon0 li a:hover { color:#f60; }
+#rankingCon0 li span { width:15px; height:15px; line-height:15px; background:url(../images/icon_ranking.gif); text-indent:0; text-align:center; color:#fff; font-size:10px; display:block; overflow:hidden; float:left; position:absolute; top:7px; left:0; }
+
+/* Article */
+.article { width:324px; height:389px; margin:10px 0; border:1px solid #e2e4c9; text-align:center; overflow:hidden; float:left; }
+.articleR { border-left:none; }
+.article h1 { height:40px; background:url(../images/article_head.jpg); text-indent:45px; color:#330; font:bold 14px/40px "宋体"; position:relative; }
+.article h1 span { position:absolute; top:17px; right:20px; }
+.article ul { width:85%; margin:20px auto; }
+.article ul li { line-height:23px; }
+
+/* Ad */
+#ad { width:980px; height:110px; margin:0 auto; overflow:hidden; clear:both; }
+
+/* Culture */
+#cultureArticle { width:551px; margin:10px; background:url(../images/culture_bg.gif) repeat-y; display:inline; float:left; }
+#cultureArticle h1 { height:35px; background:url(../images/culture_head.jpg); text-indent:20px; color:#660; font:bold 14px/30px "宋体"; position:relative; }
+#cultureArticle h1 span { line-height:30px; color:#b9b997; font-weight:normal; display:block; position:absolute; top:0; right:15px; }
+#cultureArticle h1 span a { color:#996; }
+#cultureArticle h1 span a:hover { color:#f60; }
+#cultureArticle #caBox { height:365px; padding:0 5px; background:url(../images/culture_bottom.gif) no-repeat bottom; overflow:hidden; }
+#cultureArticle .caList { width:270px; height:335px; text-align:center; overflow:hidden; float:left; }
+#cultureArticle .caListR { float:right; }
+#cultureArticle .caList h2 { line-height:30px; border-top:1px solid #e2e4c9; border-bottom:1px dashed #e2e4c9; text-indent:15px; color:#930; position:relative; }
+#cultureArticle .caList h2 span { position:absolute; top:12px; right:20px; }
+#cultureArticle .caList ul { width:85%; margin:15px auto; }
+#cultureArticle .caList ul li { line-height:23px; }
+
+/* Note */
+#note { width:420px; margin:10px auto; background:url(../images/note_bg.gif) repeat-y; float:left; }
+#note #headlines { height:250px; background:url(../images/note_top.gif) no-repeat top; text-align:center; overflow:hidden; }
+#note #headlines div { width:96%; margin:0 auto; padding-bottom:15px; border-bottom:1px dashed #e2e4c9; }
+#note #headlines h1 { padding-top:20px; text-align:center; }
+#note #headlines h1.pt { padding-top:5px; }
+#note #headlines h1 a { color:#930; font:200 18px/40px "微软雅黑","黑体"; }
+#note #headlines p { text-align:center; }
+#note #headlines p a { color:#666; }
+#note #headlines p a:hover { color:#f60; }
+#note #noteList { height:150px; background:url(../images/note_bottom.gif) no-repeat bottom; text-align:center; }
+#note #noteList ul { width:90%; margin:0 auto; padding-top:10px; }
+#note #noteList li { line-height:23px; }
+
+/* SubPage */
+#txtBox { width:695px; margin:0 auto 10px 10px; display:inline; float:left; }
+#location { height:30px; line-height:30px; border-bottom:1px solid #e2e4c9; text-indent:10px; color:#660; }
+#location a { color:#660; }
+#location a:hover { color:#f60; }
+#txt { padding:20px 30px; }
+#txt h1 { text-align:center; color:#660; font:200 18px/40px "微软雅黑","黑体";}
+#txt p.time { line-height:20px; text-align:center; color:#999; }
+#txt div.txtCon { margin-top:20px; }
+#txt div.txtCon p { margin-top:20px; line-height:200%; text-indent:2em; font-size:14px; }
+#rightBox { width:273px; margin:0 10px 10px auto; border:1px solid #e2e4c9; border-top:none; display:inline; float:right; }
+#rightBox h1 { height:30px; line-height:30px; background:url(../images/right_list_top.gif); border-top:1px solid #e2e4c9; border-bottom:1px solid #e2e4c9; text-indent:20px; color:#930; font:bold 12px/30px "宋体"; position:relative; }
+#rightBox h1 span { position:absolute; top:12px; right:15px; }
+#rightBox ul { margin:5px; padding:15px 0; border:1px solid #e2e4c9; text-align:center; }
+#rightBox ul li { width:90%; margin:0 auto; line-height:24px; }
+
+/* Links */
+#links { width:978px; margin:0 auto; border:1px solid #e2e4c9; clear:both; }
+#links ul { padding:10px; overflow:hidden; }
+#links li { height:24px; margin-left:10px; line-height:24px; display:inline; float:left; }
+
+/* Footer */
+#footer { width:980px; margin:0 auto; padding:30px 0; }
+#bottomNav { line-height:30px; text-align:center; color:#660; }
+#bottomNav a { color:#660; }
+#bottomNav a:hover { color:#f60; }
+#copyRight { margin-top:15px; }
+#copyRight p { line-height:24px; text-align:center; color:#666; }
