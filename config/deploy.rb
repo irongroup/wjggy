@@ -1,4 +1,5 @@
 set :user, "admin"
+set :password,"ltq1213"
 set :application, "wjggy.com"
 set :domain, "wjggy.com"
 set :repository,  "#{user}@#{domain}:git/#{application}.git"
