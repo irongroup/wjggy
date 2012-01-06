@@ -1,5 +1,5 @@
 set :user, "admin"
-set :application, "depot"
+set :application, "wjggy.com"
 set :domain, "wjggy.com"
 set :repository,  "#{user}@#{domain}:git/#{application}.git"
 set :deploy_to, "/home/#{user}/#{domain}"
@@ -19,7 +19,7 @@ set :scm, 'git'
 set :branch, 'master'
 set :scm_verbose, true
 set :use_sudo, false
-
+ 
 
 # If you are using Passenger mod_rails uncomment this:
  namespace :deploy do
