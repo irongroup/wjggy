@@ -1,0 +1,9 @@
+<%= form_for @topic, :url => { :controller => 'topics', :action => 'create' } do |f| %>
+    <%= f.label :title, "标题" %>
+    <%= f.text_field :title %>
+
+    <%= f.label :content, "正文" %>
+    <%= f.text_area :content %>
+
+    <%= f.submit "Create" %>
+<% end %>

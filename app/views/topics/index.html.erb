@@ -1,0 +1,61 @@
+<div id="txtBox">
+    <div id="location"><a href="#">首页</a> &gt; <a href="#">疾病</a></div>
+    <div id="txt">
+      <ul>
+        <% @topics.each do |topic| %>
+        <li>&middot;<a href="#"><%= topic.title %></a>
+        <%= link_to 'Show', :controller => 'topics', :action => 'show', :id => topic %>
+        <%= link_to 'Edit', :controller => 'topics', :action => 'edit', :id => topic %>
+        <%= link_to 'Delete', :controller => 'topics', :action => 'destroy', :id => topic %>
+        </li>
+        <% end %>
+      </ul>
+      <%= link_to 'New event', :controller => 'topics', :action => 'new' %>
+      
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <p>&nbsp; </p>
+      <p>&nbsp;</p>
+      <ul>
+        <li></li>
+        <li></li>
+      </ul>
+      <h1>&nbsp;</h1>
+      <p> 首页 上一页 下一页 尾页</p>
+      <div class="txtCon"></div>
+    </div>
+  </div>
+  <div id="rightBox">
+    <h1>保健<span class="more"><a href="#" title="更多&gt;&gt;">more&gt;&gt;</a></span></h1>
+    <ul>
+      <li>&middot;<a href="#">自查你是否可以继续戴隐形眼镜</a></li>
+      <li>&middot;<a href="#">六妙招有助增强免疫力</a></li>
+      <li>&middot;<a href="#">冬季火大怎样灭去人体的四把火</a></li>
+      <li>&middot;<a href="#">如何鉴别和诊断冻疮</a></li>
+      <li>&middot;<a href="#">拒绝室内污染 把过敏原赶出家</a></li>
+    </ul>
+    <h1>饮食<span class="more"><a href="#" title="更多&gt;&gt;">more&gt;&gt;</a></span></h1>
+    <ul>
+      <li>&middot;<a href="#">自查你是否可以继续戴隐形眼镜</a></li>
+      <li>&middot;<a href="#">六妙招有助增强免疫力</a></li>
+      <li>&middot;<a href="#">冬季火大怎样灭去人体的四把火</a></li>
+      <li>&middot;<a href="#">如何鉴别和诊断冻疮</a></li>
+      <li>&middot;<a href="#">拒绝室内污染 把过敏原赶出家</a></li>
+    </ul>
+    <h1>女性<span class="more"><a href="#" title="更多&gt;&gt;">more&gt;&gt;</a></span></h1>
+    <ul>
+      <li>&middot;<a href="#">自查你是否可以继续戴隐形眼镜</a></li>
+      <li>&middot;<a href="#">六妙招有助增强免疫力</a></li>
+      <li>&middot;<a href="#">冬季火大怎样灭去人体的四把火</a></li>
+      <li>&middot;<a href="#">如何鉴别和诊断冻疮</a></li>
+      <li>&middot;<a href="#">拒绝室内污染 把过敏原赶出家</a></li>
+    </ul>
+    <h1>男性<span class="more"><a href="#" title="更多&gt;&gt;">more&gt;&gt;</a></span></h1>
+    <ul>
+      <li>&middot;<a href="#">自查你是否可以继续戴隐形眼镜</a></li>
+      <li>&middot;<a href="#">六妙招有助增强免疫力</a></li>
+      <li>&middot;<a href="#">冬季火大怎样灭去人体的四把火</a></li>
+      <li>&middot;<a href="#">如何鉴别和诊断冻疮</a></li>
+      <li>&middot;<a href="#">拒绝室内污染 把过敏原赶出家</a></li>
+    </ul>
+  </div>

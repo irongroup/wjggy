@@ -15,12 +15,12 @@ role :db,  domain, :primary => true # This is where Rails migrations will run
 # if you're still using the script/reaper helper you will need
 # these http://github.com/rails/irs_process_scripts
 
-set :deploy_via, :remote_cache
+#set :deploy_via, :remote_cache
 set :scm, 'git'
 set :branch, 'master'
 set :scm_verbose, true
 set :use_sudo, false
- 
+#set :deploy_via, :cop
 
 # If you are using Passenger mod_rails uncomment this:
  namespace :deploy do
